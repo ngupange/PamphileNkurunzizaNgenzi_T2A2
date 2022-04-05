@@ -15,14 +15,10 @@
 
 ![Home Page desktop view](docs/CoursesStore_1.png)
 
- 2. Course's detail page
-
-# Wireframe view
+ ## 2. Wireframe view (Course's detail page)
 
 ![Home Page desktop view](docs/CoursesStore_2.png)
 
- 3. Course's edit page
-
-# Wireframe view
+## 3. Wireframe view (Course's edit page)
 
 ![Home Page desktop view](docs/CoursesStore_1.png)
