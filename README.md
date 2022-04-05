@@ -11,10 +11,7 @@
 
 
 # Wireframes
-
- 1. Home page
-
-# Wireframe view
+## 1. Wireframe view (Home page)
 
 ![Home Page desktop view](docs/CoursesStore_1.png)
 
