@@ -44,7 +44,7 @@ I designed this application to help me to share my skills online and help anyone
 - Only Logged in User can edit a course
 - Only Logged in User can delete a course
 - Log in before you download
-- Instructor can see all his courses
+- A user can only see all his courses
 
 ## Tech Stack
 The following tech was used in the production of this portfolio:
