@@ -63,7 +63,7 @@ Link to trello board: [Click here](https://trello.com/b/PpCH5HJm/t2a2-marketplac
 - A user can only see all his courses
 
 # Database Schema Design
-
+```rb
 ActiveRecord::Schema[7.0].define(version: 2022_03_25_053642) do
   enable_extension "plpgsql"
 
@@ -138,7 +138,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_25_053642) do
   add_foreign_key "orders", "courses"
   add_foreign_key "orders", "users"
 end
-
+```
 
 
 ## Tech Stack
