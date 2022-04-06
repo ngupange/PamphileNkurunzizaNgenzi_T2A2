@@ -4,7 +4,7 @@
 
 **GitHub Repository:** [Click here](https://github.com/ngupange/PamphileNkurunzizaNgenzi_T2A2)
 
-**Live Website:** [Click here](https://upbeat-edison-7ddccb.netlify.app/index.html/)
+**Live Website:** [Click here](https://urugeroapp.herokuapp.com)
 
 # Purpose
 Nowadays, it is desirable for any public or private entity with an educational or formative vocation to adhere to the new formula of delivering their courses that would allow that institution to put their contents online to overcome the problems of congestion within their classes  and extend their geographical scope anyone who is interested around the world can take their course. 
@@ -139,8 +139,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_25_053642) do
   add_foreign_key "orders", "users"
 end
 ```
-
-
 ## Tech Stack
 The following tech was used in the production of this portfolio:
 - HTML
@@ -156,3 +154,7 @@ The following external resources were used in creating this website:
 - Font awesome
 - Unsplash (for stock images)
 - Bootstrap 5
+
+# Future Improvements
+
+Due to other factors out of my control I couldn't finish what I started my plan is to finish this project before next intake. There are many things to improve and make this app fully usable.
