@@ -36,7 +36,7 @@ I designed this application to help me to share my skills online and help anyone
 
 ## Entity Relationship (ER) Diagram
 
- [ERD](docs/erd.png)
+![ERD](docs/erd.png)
 
 ## Tech Stack
 The following tech was used in the production of this portfolio:
