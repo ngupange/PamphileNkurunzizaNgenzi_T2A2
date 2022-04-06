@@ -38,6 +38,14 @@ I designed this application to help me to share my skills online and help anyone
 
 ![ERD](docs/erd.png)
 
+## User stories
+- Any Guest can see all courses posted and their price
+- Only Logged in User can post a new content
+- Only Logged in User can edit a course
+- Only Logged in User can delete a course
+- Log in before you download
+- Instructor can see all his courses
+
 ## Tech Stack
 The following tech was used in the production of this portfolio:
 - HTML
