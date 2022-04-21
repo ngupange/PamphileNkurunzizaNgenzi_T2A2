@@ -66,9 +66,11 @@ Link to trello board: [Click here](https://trello.com/b/PpCH5HJm/t2a2-marketplac
 
 ### Input Validation
 
-In order to sanitise data users filled on form we decided to do client side input validations this approach will help us to maintain data integrity.
+In order to sanitise data users filled on form we decided to do client side input validation, this approach will help us to maintain data integrity.
 We must make sure that the data user filled into a field are present (not null) and are in correct format so that they can be saved properly into database and won't break our applications. And we will also help users to complete the forms correctly.
-Validating form in browser (client side) will help us to fulfill these goals. When user enters data, the web application will check whether it is correct. If correct, the application will allow the data to be submitted to the server and processed / saved in a database; if not, it will issue error / warning message to explain what went wrong. Here is the code :
+Validating form in browser (client side) will help us to fulfill these goals. When user enters data, the web application will check whether it is correct. If correct, the application will allow the data to be submitted to the server and processed / saved in a database; if not, it will issue error or warning message to explain what went wrong.
+
+Here is the code :
 
 ```rb
     #Client side form validations sanitizing input
