@@ -58,11 +58,11 @@ Link to trello board: [Click here](https://trello.com/b/PpCH5HJm/t2a2-marketplac
 
 ![Course's edit page screenshot](docs/edit_screen.png)
 
-## R15 The different high-level components (abstractions)
-
 ## Entity Relationship (ER) Diagram
 
 ![ERD](docs/erd.png)
+
+## The different high-level components (abstractions)
 
 ### Input Validation
 
