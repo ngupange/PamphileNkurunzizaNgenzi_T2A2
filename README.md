@@ -1,4 +1,4 @@
-# Marketplace Project  / Coder Academy Term 2 Assignment 2
+# Marketplace Project / Coder Academy Term 2 Assignment 2
 
 # Links
 
@@ -7,7 +7,8 @@
 **Live Website:** [Click here](https://urugeroapp.herokuapp.com)
 
 # Purpose
-Nowadays, it is desirable for any public or private entity with an educational or formative vocation to adhere to the new formula of delivering their courses that would allow that institution to put their contents online to overcome the problems of congestion within their classes  and extend their geographical scope anyone who is interested around the world can take their course. 
+
+Nowadays, it is desirable for any public or private entity with an educational or formative vocation to adhere to the new formula of delivering their courses that would allow that institution to put their contents online to overcome the problems of congestion within their classes and extend their geographical scope anyone who is interested around the world can take their course.
 I designed this application to help me to share my skills online and help anyone on market who want to share their skills and make a profit from it. This application will help any content creator or any school to upload online a course where anyone can buy it or stream it for free if is uploaded as a free course. This app will hold courses about different topic / subject. Different users can buy and after they will be able to review that course they bought. User can also upload a course, upgrade it, or retire it. A user who uploaded a course can see a report of all copies sold and cash out or keep it in app balance where they can use that balance to buy other courses
 
 # Purpose:
@@ -16,7 +17,7 @@ The original intention of Online course store was to provide a marketplace in wh
 
 # Target Audience:
 
-The site's primary goal is to provide a marketplace for students and educators / content creators. 
+The site's primary goal is to provide a marketplace for students and educators / content creators.
 
 # Tasks Allocation – Project Management
 
@@ -26,21 +27,27 @@ Link to trello board: [Click here](https://trello.com/b/PpCH5HJm/t2a2-marketplac
 ### Screenshots
 
 ![Screenshot](docs/trello.png)
-# Entity 
+
+# Entity
 
 ![Home Page wireframe view](docs/CoursesStore_1.png)
+
 ## Screenshots and wireframe
+
 ### 1. Wireframe view (Home page)
 
 ![Home Page wireframe view](docs/CoursesStore_1.png)
+
 ### screenshot view (Home page)
+
 ![Home Page desktop view](docs/home_screen.png)
 
- ### 2. Wireframe view (Course's detail page)
+### 2. Wireframe view (Course's detail page)
 
 ![Course's detail page](docs/CoursesStore_2.png)
 
 ### screenshot view (Course's detail page)
+
 ![Course's detail page screenshot](docs/details_screen.png)
 
 ### 3. Wireframe view (Course's edit page)
@@ -48,13 +55,35 @@ Link to trello board: [Click here](https://trello.com/b/PpCH5HJm/t2a2-marketplac
 ![Course's edit page](docs/CoursesStore_3.png)
 
 ### screenshot view (Course's edit page)
+
 ![Course's edit page screenshot](docs/edit_screen.png)
+
+## R15 The different high-level components (abstractions)
 
 ## Entity Relationship (ER) Diagram
 
 ![ERD](docs/erd.png)
 
+### Input Validation
+
+In order to sanitise data users filled on form we decided to do client side input validations this approach will help us to maintain data integrity.
+We must make sure that the data user filled into a field are present (not null) and are in correct format so that they can be saved properly into database and won't break our applications. And we will also help users to complete the forms correctly.
+Validating form in browser (client side) will help us to fulfill these goals. When user enters data, the web application will check whether it is correct. If correct, the application will allow the data to be submitted to the server and processed / saved in a database; if not, it will issue error / warning message to explain what went wrong. Here is the code :
+
+```rb
+    #Client side form validations sanitizing input
+    validates :title, presence: true
+    validates :classfication, presence: true
+    validates :language, presence: true
+    validates :status, presence: true
+    validates :instructor, presence: true
+    validates :description, presence: true
+    validates :cover, presence: true
+
+```
+
 ## User stories
+
 - Any Guest can see all courses posted and their price
 - Only Logged in User can post a new content
 - Only Logged in User can edit a course
@@ -63,6 +92,7 @@ Link to trello board: [Click here](https://trello.com/b/PpCH5HJm/t2a2-marketplac
 - A user can only see all his courses
 
 # Database Schema Design
+
 ```rb
 ActiveRecord::Schema[7.0].define(version: 2022_03_25_053642) do
   enable_extension "plpgsql"
@@ -139,8 +169,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_25_053642) do
   add_foreign_key "orders", "users"
 end
 ```
+
 ## Tech Stack
+
 The following tech was used in the production of this portfolio:
+
 - HTML
 - SCSS
 - JavaScript
@@ -149,7 +182,9 @@ The following tech was used in the production of this portfolio:
 - AWS. (Active Storage)
 
 ## Other Resources
+
 The following external resources were used in creating this website:
+
 - Google Fonts
 - Font awesome
 - Unsplash (for stock images)
