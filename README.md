@@ -93,7 +93,49 @@ Here is the code :
     validates :instructor, presence: true
     validates :description, presence: true
     validates :cover, presence: true
+```
 
+## R17 Describe your projects models in terms of the relationships (active record associations) they have with each other
+
+- **A user can have zero to many orders.**
+
+The User model has a **_One-To-Many relationship_** with the order model. Each order can only be related to one user. A user can have many orders but each has a single user.
+
+```rb
+    class User < ApplicationRecord
+    # Include default devise modules. Others available are:
+    # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+    devise :database_authenticatable, :registerable,
+          :recoverable, :rememberable, :validatable
+
+    # A user can have zero to many orders
+    has_many :orders
+
+    # users role and initialization for new record
+    enum  role: [:user, :super_user, :admin]
+    after_initialize :set_default_role, :if => :new_record?
+
+    # Default user role
+
+    def set_default_role
+      self.role ||= :user
+    end
+
+      #Client side form validations sanitizing input
+      validates :first_name, presence: true
+      validates :last_name, presence: true
+  end
+```
+
+- **An order belongs to one and only one user and one course.**
+
+In our app an order has one user and one course this is different with other buy and sell models because here you only buy a course once because it's a digital copy to download, you can't say that you orderd 2 copies you will still get one.
+
+```rb
+    class Order < ApplicationRecord
+      belongs_to :user
+      belongs_to :course
+    end
 ```
 
 ## User stories
