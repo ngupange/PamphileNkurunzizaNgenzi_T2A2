@@ -64,11 +64,13 @@ Link to trello board: [Click here](https://trello.com/b/PpCH5HJm/t2a2-marketplac
 
 ## The different high-level components (abstractions)
 
-- **Model:** This part manages our site's data. Its role is to retrieve the data in the database, organize it so that it can then be processed by the controller. It uses SQL queries to manipulate these data. For this app we have 3 Models.
-- Course model which deals with all details about courses
+Our application is developed using the Model View Controller structure (MVC). The MVC pattern allows us to organize source code well. The purpose of MVC is precisely to separate the logic of the code into three parts that are found in separate files.
 
-  - Order model which will be in charge of course’s orders. (Bought)
-  - User model which deals with authentication and system roles
+- **Model:** This part manages our site's data. Its role is to retrieve the data in the database, organize it so that it can then be processed by the controller. It uses SQL queries to manipulate these data. For this app we have 3 Models.
+
+  - **_Course model_** which deals with all details about courses
+  - **_Order model_** which will be in charge of course’s orders. (Bought)
+  - **_User model_** which deals with authentication and system roles
 
 - **View:** This part focuses on the display. It does almost no calculation and just retrieves variables to know what it should display. There is mainly HTML code but also some loops to display for example a list of messages. For this part we generated different views to facilitate user to interact with our model. We have more than 30 pages so far and some pages we generated them using a template because they have some similarities. We also used **_client-side validation_** to sanitise data on client side before it reach in database.
 
