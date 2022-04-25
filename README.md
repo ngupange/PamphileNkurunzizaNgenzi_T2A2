@@ -241,14 +241,18 @@ The following tech was used in the production of this portfolio:
 - Heroku (Deployment)
 - AWS. (Active Storage)
 
-## Other Resources
+## Other Resources (Third Party)
 
 The following external resources were used in creating this website:
-
-- Google Fonts
-- Font awesome
-- Unsplash (for stock images)
-- Bootstrap 5
+| Service | Description |
+| --- | ----------- |
+| AWS S3 | The Amazon Web Services (AWS) S3 is a cloud storage tool used to host all the website's footage, such as the courses covers and course file. The platform is both secure and reliable. |
+| Bootstrap 5 | Framework used to implement template-based styling across the application. Some of the templates rely upon JavaScript, and jQuery is needed as a dependency in order for it to function properly in Rails. |
+| Devise | Authentication library to implement user accounts. Devise has its own set of MVC components to handle registrations, sessions, passwords, and more. It works well alongside CanCanCan and Rolify.|
+| Font awesome | We used this to customise or add some new Icons! |
+| Google Fonts | To change characters format |
+| Stripe | Transactions platform chosen for the app. Stripe's API allows users to test transactions securely (i.e. cashless transactions).|
+| Unsplash | (for stock images) |
 
 # Future Improvements
 
