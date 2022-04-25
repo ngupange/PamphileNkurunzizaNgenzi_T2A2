@@ -138,6 +138,10 @@ In our app an order has one user and one course this is different with other buy
     end
 ```
 
+## R18. Discuss the database relations to be implemented in your application.
+
+The Users table from devise gem has a zero-to-many relationships with the courses table. A user can create zero or many courses. Each course belongs to a user! Each course has a cover image from active storage saved on amazon S3 and we also use this service to store the course (File). A course can be ordered many times by different users. The user once paid he will receive right to download that course for good. When user click on buy a new record is created in orders table and that record has a status field which will be paid or wait until the payment is done. This field will be used to know which data must be displayed at user’s page. Each user has right to see what he uploaded or bought. Relationship between courses table and orders is a course can be ordered zero or many times, but a course appears once on one order. A user can have zero or many orders. A payment has an order Id to confirm which orders have been paid and how much been paid.
+
 ## User stories
 
 - Any Guest can see all courses posted and their price
